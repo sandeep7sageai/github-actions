@@ -8,10 +8,14 @@ on:
 
 # Jobs
 # Should be inside workflows
-# Job tellls what the workflow should do
+# Job tellls what the workflow should do, there can be more than one jobs
+# jobs is an object so we need indentation
 jobs:
+  # 1st job
   say-hello:
+      # Creates an Ephermal container with ubuntu running and delete
       runs-on: ubuntu-latest
+      # That epermal container will have steps to execute, hence name those steps and use `run: <command>`
       steps:
         - name: Say hello to everyone
           run: echo "Hello Friends"
