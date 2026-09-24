@@ -4,7 +4,7 @@ name: AutoLinter
 
 on:
   push:
-    paths:"*.py"
+    paths: "*.py"
 
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
       # This step will install the linting tool
       - name: Install linter
         run: pip install ruff
-      #
+      # This step will run the linter
       - name: Check the file for linting
         run: ruff check .
       
