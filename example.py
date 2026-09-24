@@ -1,5 +1,5 @@
 '''
-Example python code to check the lint workflow
+Example python code to check the lint.yml workflow
 '''
 # Ask the user for their name and age
 name = input("What is your name? ")
