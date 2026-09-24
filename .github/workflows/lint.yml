@@ -1,0 +1,23 @@
+# This Workflow will check if python codes in the repositories are syntaxlly correct
+
+name: AutoLinter
+
+on:
+  push:
+    paths:"*.py"
+
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      # This step will automatically checkout the code of the current branch (our workflow is in main branch) into the runner
+      - name: Checkout/Clone the code
+        uses: actions/checkout@v7
+      # This step will install the linting tool
+      - name: Install linter
+        run: pip install ruff
+      #
+      - name: Check the file for linting
+        run: ruff check .
+      
