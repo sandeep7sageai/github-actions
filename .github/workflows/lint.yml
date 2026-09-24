@@ -4,6 +4,7 @@ name: AutoLinter
 
 on:
   push:
+    branches: [main]
     paths: "*.py"
 
 
