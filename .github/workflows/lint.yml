@@ -8,7 +8,7 @@ on:
 
 
 jobs:
-  code:
+  code-linting:
     runs-on: ubuntu-latest
     steps:
       # This step will automatically checkout the code of the current branch (our workflow is in main branch) into the runner
