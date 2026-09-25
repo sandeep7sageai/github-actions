@@ -224,3 +224,4 @@ The browser calls these as `/api/...`; the backend serves them at the root.
 ├── backend/             Go API (main.go + Dockerfile)
 └── init/postgres/       schema + example data, loaded on first start
 ```
+
